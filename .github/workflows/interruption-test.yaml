@@ -1,0 +1,15 @@
+name: Lab 9 - Interruption Test
+
+on:
+  workflow_dispatch:
+
+jobs:
+  interruption-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Simulate long-running operation
+        run: |
+          echo "Simulating a long-running platform operation"
+          sleep 300
+          echo "Operation completed"
