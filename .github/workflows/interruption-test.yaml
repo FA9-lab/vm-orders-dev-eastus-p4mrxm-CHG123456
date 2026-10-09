@@ -1,0 +1,17 @@
+name: Lab 9 - Interruption Test
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  interruption-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Simulate long-running operation
+        run: |
+          echo "Simulating a long-running platform operation"
+          sleep 300
+          echo "Operation completed"
