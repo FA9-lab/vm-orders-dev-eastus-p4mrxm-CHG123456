@@ -1,7 +1,9 @@
 name: Lab 9 - Interruption Test
 
 on:
-  workflow_dispatch:
+  pull_request:
+    branches:
+      - main
 
 jobs:
   interruption-test:
